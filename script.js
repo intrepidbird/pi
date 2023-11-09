@@ -1,8 +1,17 @@
 $(document).ready(function() {
-    $('#piDigitsForm').submit(function(e) {
+    $('#digitsForm').submit(function(e) {
         e.preventDefault();
-        var digits = $('#digits').val();
-        var pi = math.pi(digits);
-        $('#piDigitsResult').text(pi);
+        let digits = $('#digits').val();
+        if (digits > 0) {
+            let pi = calculatePi(digits);
+            $('#piResult').text(`The first ${digits} digits of Pi are: ${pi}`);
+        } else {
+            $('#piResult').text('Please enter a valid number of digits.');
+        }
     });
+
+    function calculatePi(digits) {
+        let pi = Math.PI.toFixed(digits);
+        return pi;
+    }
 });
