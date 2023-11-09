@@ -10,22 +10,22 @@
 <body>
     <!-- Header Section -->
     <header class="bg-dark text-white text-center p-4">
-        Pi Digits Generator
+        <h1>Pi Digits</h1>
     </header>
 
-    <!-- Pi Digits Form -->
-    <section id="pi-digits" class="container mt-5">
+    <!-- Main Content -->
+    <section id="piDigits" class="container mt-5">
         <div class="row justify-content-center">
             <div class="col-md-6">
-                <h2>Generate Pi Digits</h2>
-                <form id="piDigitsForm">
+                <h2>Enter the Number of Digits</h2>
+                <form id="digitsForm">
                     <div class="form-group">
                         <label for="digits">Number of Digits:</label>
                         <input type="number" class="form-control" id="digits" placeholder="Enter the number of digits" required>
                     </div>
-                    <button type="submit" class="btn btn-primary w-100">Generate</button>
+                    <button type="submit" class="btn btn-primary w-100">Generate Pi Digits</button>
                 </form>
-                <div id="piDigitsResult" class="mt-4"></div>
+                <div id="piResult" class="mt-4"></div>
             </div>
         </div>
     </section>
@@ -33,6 +33,6 @@
     <!-- Bootstrap & jQuery JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.3.2/math.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
