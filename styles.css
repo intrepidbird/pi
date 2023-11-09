@@ -1,0 +1,19 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    font-weight: bold;
+}
+
+#piDigits {
+    background-color: #f7f7f7;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+#piResult {
+    font-size: 18px;
+    font-weight: bold;
+}
